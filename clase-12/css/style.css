@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.background-properties{
+    height: 60px;
+    width: 100%;
+    background-color: #f1f1f1;
+    background-image: url("../media/logo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h1{
+    text-align: center;
+    color: rgb(7, 219, 219);
+}
+
+.border-properties{
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 20px;  
+    margin-top: 10px;
+    text-align: center;
+}
+
+.border-properties:hover{
+    color: rgb(39, 46, 51);
+    background-color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-shadow{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.box-shadow:hover{
+    box-shadow: 0px 0px 10px rgb(0, 0, 0);
+    background-color: black;
+    color: rgb(57, 60, 64);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-shadow-properties{
+    text-shadow: 2px 2px 4px #b10c0c;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: xx-large;
+    text-align: center;
+    transition: text-shadow 0.5s, filter 0.5s;
+    animation: hover-animation 2s infinite;
+}
+
+.text-shadow-properties:hover{
+    text-shadow: 4px 4px 8px #000000;
+    filter: blur(0px);
+}
+
+@keyframes hover-animation{
+    0%{
+        text-shadow: 2px 2px 8px #b10c0c;
+        filter: blur((0px));
+    }
+    50%{
+        text-shadow: 2px 2px 4px #000000;
+        filter: blur((0px));
+    }
+    100%{
+        text-shadow: 2px 2px 8px #b10c0c;
+        filter: blur((0px));
+    }
+}
