@@ -7,12 +7,15 @@
 
 /* Estilos para el fondo del menu */
 .navbar{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
+    /*background-color: blur(100%);*/
+    position: fixed;
+    width: 100%;
 }
 
 /* Estilos para el logotipo */
 .navbar-brand{
-    color: rgb(128, 56, 104);
+    color: rgb(93, 5, 93);
     flex: 1;
 }
 
